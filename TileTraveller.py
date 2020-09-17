@@ -7,3 +7,21 @@
 #Lets make a function to control his movements
 #We make restrictions for the middle boxes and the directions he cannot go
 #We end the game when he hits W3 H1
+
+h=1
+w=1
+
+player_move=input("You can travel: ")
+north=True
+south=False
+east=False
+west=False
+error=False
+
+def movement(str):
+
+
+
+
+
+def error()
