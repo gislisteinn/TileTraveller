@@ -11,17 +11,42 @@
 h=1
 w=1
 
-player_move=input("You can travel: ")
-north=True
-south=False
-east=False
-west=False
-error=False
+north = "(N)orth"
+south = "(S)outh"
+east = "(E)ast"
+west = "(W)est"
 
-def movement(str):
+user_question = "You can travel:{}{}{}{}".format(north, east, west, south)
 
 
+player_move=input(user_question).lower()
+
+
+# def input(str):
+#     if not error:
 
 
 
-def error()
+# def movement(number):
+
+
+
+def error(str):
+    if h >= 3 and str == "n":
+        error = True
+    elif h <= 1 and str == "s":
+        error = True
+    elif w >= 3 and str == "e":
+        error = True
+    elif w <= 1 and str == "w":
+        error = True
+    return(error)
+
+while (h == 1 or h == 2) and (w == 1 or w ==2):
+    error = error(player_move)
+    if error:
+        print("Not a valid direction!")
+    player_move = input(user_question).lower()
+    error = False
+
+
